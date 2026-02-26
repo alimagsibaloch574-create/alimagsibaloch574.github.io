@@ -4,15 +4,18 @@
     <title>Ali Baloch Online Business</title>
 
     <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f7fa;
             text-align: center;
         }
-           html {
-    scroll-behavior: smooth;
-}
+
         /* Navbar */
         .navbar {
             background: #222;
@@ -55,15 +58,22 @@
             margin-top: 10px;
         }
 
-        .btn {
+        .hero-btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background-color: white;
+            margin-top: 25px;
+            padding: 14px 30px;
+            background: white;
             color: #27ae60;
             text-decoration: none;
             border-radius: 30px;
             font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .hero-btn:hover {
+            background: #222;
+            color: white;
+            transform: scale(1.1);
         }
 
         /* Sections */
@@ -71,40 +81,43 @@
             padding: 50px 20px;
         }
 
-      .box {
-    background: white;
-    margin: 20px auto;
-    padding: 25px;
-    width: 70%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: 0.3s ease;
-}
+        .box {
+            background: white;
+            margin: 20px auto;
+            padding: 25px;
+            width: 70%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+        }
 
-.box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}  @media (max-width: 768px) {
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
 
-    .box {
-        width: 90%;
-    }
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
 
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
+            .box {
+                width: 90%;
+            }
 
-    .menu {
-        margin-top: 10px;
-    }
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    .menu a {
-        display: block;
-        margin: 10px 0;
-    }
+            .menu {
+                margin-top: 10px;
+            }
 
-}
+            .menu a {
+                display: block;
+                margin: 10px 0;
+            }
+
+        }
 
         footer {
             background: #2c3e50;
@@ -112,6 +125,7 @@
             padding: 15px;
             margin-top: 40px;
         }
+
     </style>
 </head>
 
@@ -132,6 +146,7 @@
     <div class="hero">
         <h1>Ali Baloch Online Business</h1>
         <p>Grow Your Business Online</p>
+        <a href="#contact" class="hero-btn">Get Started Now</a>
     </div>
 
     <!-- Main Section -->
@@ -175,16 +190,3 @@
 
 </body>
 </html>
-
-   
-
-
-
-
-
-
-
-
-
-
-
