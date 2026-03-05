@@ -11,10 +11,12 @@ scroll-behavior:smooth;
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background-color:#f4f7fa;
+font-family:Arial;
+background:#f4f7fa;
 text-align:center;
 }
+
+/* Navbar */
 
 .navbar{
 background:#222;
@@ -39,6 +41,8 @@ margin-left:20px;
 .menu a:hover{
 color:#27ae60;
 }
+
+/* Hero */
 
 .hero{
 background:linear-gradient(135deg,#27ae60,#2ecc71);
@@ -65,7 +69,7 @@ color:#27ae60;
 text-decoration:none;
 border-radius:30px;
 font-weight:bold;
-transition:0.3s ease;
+transition:0.3s;
 }
 
 .hero-btn:hover{
@@ -73,6 +77,8 @@ background:#222;
 color:white;
 transform:scale(1.1);
 }
+
+/* Sections */
 
 .section{
 padding:50px 20px;
@@ -85,7 +91,7 @@ padding:25px;
 width:70%;
 border-radius:10px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
-transition:0.3s ease;
+transition:0.3s;
 }
 
 .box:hover{
@@ -93,12 +99,31 @@ transform:translateY(-10px);
 box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
 
-footer{
-background:#2c3e50;
-color:white;
-padding:15px;
-margin-top:40px;
+/* SERVICES CARDS */
+
+.services{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
 }
+
+.service-card{
+background:white;
+padding:25px;
+width:220px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
 
 form input, form textarea{
 width:80%;
@@ -121,26 +146,9 @@ transition:0.3s;
 background:#222;
 }
 
-/* WhatsApp Button */
+/* Mobile */
 
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-}
-
-.whatsapp-float:hover{
-background:#1ebe5d;
-}
-
-@media (max-width:768px){
+@media(max-width:768px){
 
 .box{
 width:90%;
@@ -162,12 +170,24 @@ margin:10px 0;
 
 }
 
+/* Footer */
+
+footer{
+background:#2c3e50;
+color:white;
+padding:15px;
+margin-top:40px;
+}
+
 </style>
 </head>
 
 <body id="top">
 
+<!-- Navbar -->
+
 <div class="navbar">
+
 <div class="logo">Ali Baloch</div>
 
 <div class="menu">
@@ -176,51 +196,93 @@ margin:10px 0;
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </div>
+
 </div>
 
+<!-- Hero -->
 
 <div class="hero">
+
 <h1>Ali Baloch Online Business</h1>
+
 <p>Grow Your Business Online</p>
+
 <a href="#contact" class="hero-btn">Get Started Now</a>
+
 </div>
 
+<!-- Main Section -->
 
 <div class="section">
 
+<!-- SERVICES -->
+
 <div class="box" id="services">
+
 <h2>Our Services</h2>
-<p>✔ Web Design</p>
-<p>✔ Online Marketing</p>
-<p>✔ Business Support</p>
+
+<div class="services">
+
+<div class="service-card">
+<h3>🌐 Web Design</h3>
+<p>Modern and responsive websites for your business.</p>
 </div>
 
+<div class="service-card">
+<h3>📈 Online Marketing</h3>
+<p>Grow your business using digital marketing strategies.</p>
+</div>
+
+<div class="service-card">
+<h3>💼 Business Support</h3>
+<p>Professional support to help your business succeed.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- WHY US -->
 
 <div class="box">
+
 <h2>Why Choose Us?</h2>
+
 <p>✔ Trusted by Clients</p>
+
 <p>✔ Affordable Prices</p>
+
 <p>✔ Fast Support</p>
+
 <p>✔ Quality Work</p>
+
 </div>
 
+<!-- ABOUT -->
 
 <div class="box" id="about">
+
 <h2>About Us</h2>
+
 <p>Ali Baloch Online Business provides professional digital services to help small businesses grow online.</p>
+
 <p>We focus on quality work, affordable pricing, and long-term client relationships.</p>
+
 </div>
 
+<!-- CONTACT -->
 
 <div class="box" id="contact">
 
 <h2>Contact Us</h2>
 
 <p><strong>📞 WhatsApp:</strong> 923113302893</p>
+
 <p><strong>📧 Email:</strong> alimagsibaloch574@gmail.com</p>
+
 <p><strong>📍 Location:</strong> Pakistan</p>
 
-<a href="https://wa.me/923113302893" class="hero-btn">Chat on WhatsApp Now</a>
+<a href="https://wa.me/923113302893" class="hero-btn">Chat on WhatsApp</a>
 
 <br><br>
 
@@ -246,14 +308,11 @@ margin:10px 0;
 
 </div>
 
-
 <footer>
+
 © 2026 Ali Baloch Online Business. All Rights Reserved.
+
 </footer>
-
-
-<a href="https://wa.me/923113302893" class="whatsapp-float">WhatsApp</a>
-
 
 </body>
 </html>
