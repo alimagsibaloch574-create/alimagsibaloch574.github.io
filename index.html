@@ -1,202 +1,230 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ali Baloch Online Business</title>
+<title>Ali Baloch Online Business</title>
 
-    <style> 
+<style>
 
-        html {
-            scroll-behavior: smooth;
-        }
+html{
+scroll-behavior:smooth;
+}
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f7fa;
-            text-align: center;
-        }
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background-color:#f4f7fa;
+text-align:center;
+}
 
-        .navbar {
-            background: #222;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-        }
+.navbar{
+background:#222;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+}
 
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
+.logo{
+font-size:20px;
+font-weight:bold;
+}
 
-        .menu a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
 
-        .menu a:hover {
-            color: #27ae60;
-        }
+.menu a:hover{
+color:#27ae60;
+}
 
-        .hero {
-            background: linear-gradient(135deg, #27ae60, #2ecc71);
-            color: white;
-            padding: 80px 20px;
-        }
+.hero{
+background:linear-gradient(135deg,#27ae60,#2ecc71);
+color:white;
+padding:80px 20px;
+}
 
-        .hero h1 {
-            font-size: 40px;
-            margin: 0;
-        }
+.hero h1{
+font-size:40px;
+margin:0;
+}
 
-        .hero p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
+.hero p{
+font-size:20px;
+margin-top:10px;
+}
 
-        .hero-btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 30px;
-            background: white;
-            color: #27ae60;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s ease;
-        }
+.hero-btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:white;
+color:#27ae60;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s ease;
+}
 
-        .hero-btn:hover {
-            background: #222;
-            color: white;
-            transform: scale(1.1);
-        }
+.hero-btn:hover{
+background:#222;
+color:white;
+transform:scale(1.1);
+}
 
-        .section {
-            padding: 50px 20px;
-        }
+.section{
+padding:50px 20px;
+}
 
-        .box {
-            background: white;
-            margin: 20px auto;
-            padding: 25px;
-            width: 70%;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: 0.3s ease;
-        }
+.box{
+background:white;
+margin:20px auto;
+padding:25px;
+width:70%;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s ease;
+}
 
-        .box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
+.box:hover{
+transform:translateY(-10px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
 
-        @media (max-width: 768px) {
+footer{
+background:#2c3e50;
+color:white;
+padding:15px;
+margin-top:40px;
+}
 
-            .box {
-                width: 90%;
-            }
+form input, form textarea{
+width:80%;
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
 
-            .navbar {
-                flex-direction: column;
-                text-align: center;
-            }
+.form-btn{
+padding:10px 20px;
+border:none;
+background:#27ae60;
+color:white;
+border-radius:20px;
+cursor:pointer;
+transition:0.3s;
+}
 
-            .menu {
-                margin-top: 10px;
-            }
+.form-btn:hover{
+background:#222;
+}
 
-            .menu a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
+/* WhatsApp Button */
 
-        footer {
-            background: #2c3e50;
-            color: white;
-            padding: 15px;
-            margin-top: 40px;
-        }
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
 
-        form input, form textarea {
-            width: 80%;
-            padding: 10px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-        }
+.whatsapp-float:hover{
+background:#1ebe5d;
+}
 
-        .form-btn {
-            padding: 10px 20px;
-            border: none;
-            background: #27ae60;
-            color: white;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+@media (max-width:768px){
 
-        .form-btn:hover {
-            background: #222;
-        }
+.box{
+width:90%;
+}
 
-    </style>
+.navbar{
+flex-direction:column;
+text-align:center;
+}
+
+.menu{
+margin-top:10px;
+}
+
+.menu a{
+display:block;
+margin:10px 0;
+}
+
+}
+
+</style>
 </head>
 
 <body id="top">
 
-    <div class="navbar">
-        <div class="logo">Ali Baloch</div>
-        <div class="menu">
-            <a href="#top">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
+<div class="navbar">
+<div class="logo">Ali Baloch</div>
 
-    <div class="hero">
-        <h1>Ali Baloch Online Business</h1>
-        <p>Grow Your Business Online</p>
-        <a href="#contact" class="hero-btn">Get Started Now</a>
-    </div>
+<div class="menu">
+<a href="#top">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
 
-    <div class="section">
 
-        <div class="box" id="services">
-            <h2>Our Services</h2>
-            <p>✔ Web Design</p>
-            <p>✔ Online Marketing</p>
-            <p>✔ Business Support</p>
-        </div>
+<div class="hero">
+<h1>Ali Baloch Online Business</h1>
+<p>Grow Your Business Online</p>
+<a href="#contact" class="hero-btn">Get Started Now</a>
+</div>
 
-        <div class="box">
-            <h2>Why Choose Us?</h2>
-            <p>✔ Trusted by Clients</p>
-            <p>✔ Affordable Prices</p>
-            <p>✔ Fast Support</p>
-            <p>✔ Quality Work</p>
-        </div>
 
-        <div class="box" id="about">
-            <h2>About Us</h2>
-            <p>Ali Baloch Online Business provides professional digital services to help small businesses grow online.</p>
-            <p>We focus on quality work, affordable pricing, and long-term client relationships.</p>
-        </div>
+<div class="section">
 
-        <div class="box" id="contact">
-            <h2>Contact Us</h2>
+<div class="box" id="services">
+<h2>Our Services</h2>
+<p>✔ Web Design</p>
+<p>✔ Online Marketing</p>
+<p>✔ Business Support</p>
+</div>
 
-            <p><strong>📞 WhatsApp:</strong> 923113302893</p>
-            <p><strong>📧 Email:</strong> alimagsibaloch574@gmail.com</p>
-            <p><strong>📍 Location:</strong> Pakistan</p>
 
-            <a href="https://wa.me/923113302893" class="hero-btn">Chat on WhatsApp Now</a>
+<div class="box">
+<h2>Why Choose Us?</h2>
+<p>✔ Trusted by Clients</p>
+<p>✔ Affordable Prices</p>
+<p>✔ Fast Support</p>
+<p>✔ Quality Work</p>
+</div>
 
-            <br><br>
-        <form action="https://formsubmit.co/alimagsibaloch574@gmail.com" method="POST">
+
+<div class="box" id="about">
+<h2>About Us</h2>
+<p>Ali Baloch Online Business provides professional digital services to help small businesses grow online.</p>
+<p>We focus on quality work, affordable pricing, and long-term client relationships.</p>
+</div>
+
+
+<div class="box" id="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>📞 WhatsApp:</strong> 923113302893</p>
+<p><strong>📧 Email:</strong> alimagsibaloch574@gmail.com</p>
+<p><strong>📍 Location:</strong> Pakistan</p>
+
+<a href="https://wa.me/923113302893" class="hero-btn">Chat on WhatsApp Now</a>
+
+<br><br>
+
+<form action="https://formsubmit.co/alimagsibaloch574@gmail.com" method="POST">
 
 <input type="text" name="name" placeholder="Your Name" required><br><br>
 
@@ -204,7 +232,7 @@
 
 <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br><br>
 
-<input type="hidden" name="_next" value="https://alimagsibaloch574-create.github.io/alimagsibaloch574.github.io/thankyou.html">
+<input type="hidden" name="_next" value="https://alimagsibaloch574.github.io/thankyou.html">
 
 <input type="hidden" name="_subject" value="New Message from Website">
 
@@ -213,20 +241,19 @@
 <button type="submit" class="form-btn">Send Message</button>
 
 </form>
-           
-        </div>
 
-    </div>
+</div>
 
-    <footer>
-        © 2026 Ali Baloch Online Business. All Rights Reserved.
-    </footer>
+</div>
+
+
+<footer>
+© 2026 Ali Baloch Online Business. All Rights Reserved.
+</footer>
+
+
+<a href="https://wa.me/923113302893" class="whatsapp-float">WhatsApp</a>
+
 
 </body>
 </html>
-
-
-
-
-
-
