@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Ali Baloch Online Business</title>
+
+<meta name="description" content="Ali Baloch Online Business - Professional Web Design, Marketing and Online Business Services.">
+
+<meta name="keywords" content="web design, online business, marketing, freelancer">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<!-- Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'GA_MEASUREMENT_ID');
+</script>
 
 <style>
 
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
 
 body{
 margin:0;
@@ -16,10 +38,19 @@ background:#f4f7fa;
 text-align:center;
 }
 
-/* Navbar */
+/* PARTICLES */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* NAVBAR */
 
 .navbar{
-background:#222;
+background:#111;
 color:white;
 display:flex;
 justify-content:space-between;
@@ -27,105 +58,72 @@ align-items:center;
 padding:15px 30px;
 }
 
-.logo{
-font-size:20px;
-font-weight:bold;
-}
-
 .menu a{
 color:white;
-text-decoration:none;
 margin-left:20px;
+text-decoration:none;
 }
 
-.menu a:hover{
-color:#27ae60;
-}
-
-/* Hero */
+/* HERO */
 
 .hero{
-background:linear-gradient(135deg,#27ae60,#2ecc71);
+padding:120px 20px;
 color:white;
-padding:80px 20px;
+background:linear-gradient(135deg,#27ae60,#2ecc71);
+animation:gradient 8s infinite alternate;
+}
+
+@keyframes gradient{
+0%{background-position:left;}
+100%{background-position:right;}
 }
 
 .hero h1{
-font-size:40px;
-margin:0;
-}
-
-.hero p{
-font-size:20px;
-margin-top:10px;
+font-size:45px;
 }
 
 .hero-btn{
 display:inline-block;
-margin-top:25px;
-padding:14px 30px;
+margin-top:20px;
+padding:15px 30px;
 background:white;
 color:#27ae60;
-text-decoration:none;
 border-radius:30px;
+text-decoration:none;
 font-weight:bold;
-transition:0.3s;
 }
 
-.hero-btn:hover{
-background:#222;
-color:white;
-transform:scale(1.1);
-}
-
-/* Sections */
-
-.section{
-padding:50px 20px;
-}
+/* BOX */
 
 .box{
 background:white;
+padding:30px;
 margin:20px auto;
-padding:25px;
-width:70%;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.box:hover{
-transform:translateY(-10px);
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
-}
-
-/* SERVICES CARDS */
-
-.services{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:20px;
-}
-
-.service-card{
-background:white;
-padding:25px;
-width:220px;
+width:75%;
 border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-transition:0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.service-card:hover{
-transform:translateY(-10px);
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
+/* BLOG */
+
+.blog{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
 }
 
-/* Contact Form */
+.blog-card{
+background:white;
+width:250px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
 
-form input, form textarea{
+/* CONTACT */
+
+form input,form textarea{
 width:80%;
 padding:10px;
 border-radius:8px;
@@ -133,73 +131,58 @@ border:1px solid #ccc;
 }
 
 .form-btn{
-padding:10px 20px;
-border:none;
+padding:12px 25px;
 background:#27ae60;
 color:white;
+border:none;
 border-radius:20px;
-cursor:pointer;
-transition:0.3s;
 }
 
-.form-btn:hover{
-background:#222;
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.box{
-width:90%;
-}
-
-.navbar{
-flex-direction:column;
-text-align:center;
-}
-
-.menu{
-margin-top:10px;
-}
-
-.menu a{
-display:block;
-margin:10px 0;
-}
-
-}
-
-/* Footer */
+/* FOOTER */
 
 footer{
-background:#2c3e50;
+background:#111;
 color:white;
-padding:15px;
+padding:40px;
 margin-top:40px;
 }
 
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:15px;
+border-radius:50%;
+}
+
 </style>
+
 </head>
 
-<body id="top">
+<body>
 
-<!-- Navbar -->
+<div id="particles-js"></div>
+
+<!-- NAVBAR -->
 
 <div class="navbar">
 
-<div class="logo">Ali Baloch</div>
+<div>Ali Baloch</div>
 
 <div class="menu">
-<a href="#top">Home</a>
 <a href="#services">Services</a>
-<a href="#about">About</a>
+<a href="#blog">Blog</a>
 <a href="#contact">Contact</a>
 </div>
 
 </div>
 
-<!-- Hero -->
+<!-- HERO -->
 
 <div class="hero">
 
@@ -207,13 +190,11 @@ margin-top:40px;
 
 <p>Grow Your Business Online</p>
 
-<a href="#contact" class="hero-btn">Get Started Now</a>
+<a href="#contact" class="hero-btn">Start Now</a>
+
+<p>Visitors: <span id="visits">0</span></p>
 
 </div>
-
-<!-- Main Section -->
-
-<div class="section">
 
 <!-- SERVICES -->
 
@@ -221,52 +202,38 @@ margin-top:40px;
 
 <h2>Our Services</h2>
 
-<div class="services">
+<p>✔ Web Design</p>
 
-<div class="service-card">
-<h3>🌐 Web Design</h3>
-<p>Modern and responsive websites for your business.</p>
-</div>
+<p>✔ Online Marketing</p>
 
-<div class="service-card">
-<h3>📈 Online Marketing</h3>
-<p>Grow your business using digital marketing strategies.</p>
-</div>
-
-<div class="service-card">
-<h3>💼 Business Support</h3>
-<p>Professional support to help your business succeed.</p>
-</div>
+<p>✔ Business Support</p>
 
 </div>
 
+<!-- BLOG -->
+
+<div class="box" id="blog">
+
+<h2>Latest Blog</h2>
+
+<div class="blog">
+
+<div class="blog-card">
+<h3>How to Grow Online Business</h3>
+<p>Learn simple strategies to grow your business online.</p>
 </div>
 
-<!-- WHY US -->
-
-<div class="box">
-
-<h2>Why Choose Us?</h2>
-
-<p>✔ Trusted by Clients</p>
-
-<p>✔ Affordable Prices</p>
-
-<p>✔ Fast Support</p>
-
-<p>✔ Quality Work</p>
-
+<div class="blog-card">
+<h3>Best Website Tips</h3>
+<p>Important tips for creating professional websites.</p>
 </div>
 
-<!-- ABOUT -->
+<div class="blog-card">
+<h3>Digital Marketing Guide</h3>
+<p>Beginner guide for marketing your business.</p>
+</div>
 
-<div class="box" id="about">
-
-<h2>About Us</h2>
-
-<p>Ali Baloch Online Business provides professional digital services to help small businesses grow online.</p>
-
-<p>We focus on quality work, affordable pricing, and long-term client relationships.</p>
+</div>
 
 </div>
 
@@ -274,17 +241,7 @@ margin-top:40px;
 
 <div class="box" id="contact">
 
-<h2>Contact Us</h2>
-
-<p><strong>📞 WhatsApp:</strong> 923113302893</p>
-
-<p><strong>📧 Email:</strong> alimagsibaloch574@gmail.com</p>
-
-<p><strong>📍 Location:</strong> Pakistan</p>
-
-<a href="https://wa.me/923113302893" class="hero-btn">Chat on WhatsApp</a>
-
-<br><br>
+<h2>Contact</h2>
 
 <form action="https://formsubmit.co/alimagsibaloch574@gmail.com" method="POST">
 
@@ -294,11 +251,7 @@ margin-top:40px;
 
 <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br><br>
 
-<input type="hidden" name="_next" value="https://alimagsibaloch574.github.io/thankyou.html">
-
-<input type="hidden" name="_subject" value="New Message from Website">
-
-<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="thankyou.html">
 
 <button type="submit" class="form-btn">Send Message</button>
 
@@ -306,13 +259,70 @@ margin-top:40px;
 
 </div>
 
-</div>
-
 <footer>
 
-© 2026 Ali Baloch Online Business. All Rights Reserved.
+<p>© 2026 Ali Baloch Online Business</p>
 
 </footer>
 
+<!-- WHATSAPP FLOAT -->
+
+<a href="https://wa.me/923113302893" class="whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- AI CHATBOT -->
+
+<script>
+
+function chatbot(){
+
+let msg=prompt("Hello 👋 How can I help you?");
+
+if(msg){
+
+alert("Thanks for your message! We will contact you soon.");
+
+}
+
+}
+
+setTimeout(chatbot,8000);
+
+</script>
+
+<!-- VISITOR COUNTER -->
+
+<script>
+
+if(localStorage.visits){
+
+localStorage.visits = Number(localStorage.visits)+1;
+
+}else{
+
+localStorage.visits = 1;
+
+}
+
+document.getElementById("visits").innerText = localStorage.visits;
+
+</script>
+
+<!-- PARTICLES -->
+
+<script>
+
+particlesJS("particles-js",{
+
+particles:{number:{value:60},size:{value:3},move:{speed:2}}
+
+});
+
+</script>
+
 </body>
+
 </html>
