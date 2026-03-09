@@ -8,28 +8,13 @@
 
 <title>Ali Baloch Online Business</title>
 
-<meta name="description" content="Ali Baloch Online Business - Professional Web Design, Marketing and Online Business Services.">
-
-<meta name="keywords" content="web design, online business, marketing, freelancer">
+<meta name="description" content="Ali Baloch Online Business - Professional Web Design and Marketing">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
-<!-- Google Analytics -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA_MEASUREMENT_ID');
-</script>
-
 <style>
-
-html{scroll-behavior:smooth;}
 
 body{
 margin:0;
@@ -38,7 +23,7 @@ background:#f4f7fa;
 text-align:center;
 }
 
-/* PARTICLES */
+/* particles */
 
 #particles-js{
 position:fixed;
@@ -47,7 +32,7 @@ height:100%;
 z-index:-1;
 }
 
-/* NAVBAR */
+/* navbar */
 
 .navbar{
 background:#111;
@@ -64,47 +49,92 @@ margin-left:20px;
 text-decoration:none;
 }
 
-/* HERO */
+/* hero slider */
 
 .hero{
-padding:120px 20px;
+position:relative;
+height:400px;
 color:white;
-background:linear-gradient(135deg,#27ae60,#2ecc71);
-animation:gradient 8s infinite alternate;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+overflow:hidden;
 }
 
-@keyframes gradient{
-0%{background-position:left;}
-100%{background-position:right;}
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+animation:slide 15s infinite;
 }
 
-.hero h1{
-font-size:45px;
+.slide:nth-child(1){background-image:url("https://picsum.photos/1200/400?1");}
+.slide:nth-child(2){background-image:url("https://picsum.photos/1200/400?2"); animation-delay:5s;}
+.slide:nth-child(3){background-image:url("https://picsum.photos/1200/400?3"); animation-delay:10s;}
+
+@keyframes slide{
+0%{opacity:0}
+10%{opacity:1}
+30%{opacity:1}
+40%{opacity:0}
+100%{opacity:0}
+}
+
+.hero-content{
+position:relative;
+z-index:2;
 }
 
 .hero-btn{
-display:inline-block;
-margin-top:20px;
 padding:15px 30px;
-background:white;
-color:#27ae60;
+background:#27ae60;
+color:white;
 border-radius:30px;
 text-decoration:none;
-font-weight:bold;
 }
 
-/* BOX */
+/* boxes */
 
 .box{
 background:white;
 padding:30px;
-margin:20px auto;
-width:75%;
-border-radius:12px;
+margin:30px auto;
+width:80%;
+border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* BLOG */
+/* services */
+
+.services{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.service-card{
+background:white;
+padding:25px;
+border-radius:10px;
+width:220px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+.service-card i{
+font-size:35px;
+color:#27ae60;
+}
+
+/* blog */
 
 .blog{
 display:flex;
@@ -114,14 +144,14 @@ flex-wrap:wrap;
 }
 
 .blog-card{
-background:white;
 width:250px;
 padding:20px;
+background:white;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* CONTACT */
+/* contact */
 
 form input,form textarea{
 width:80%;
@@ -138,16 +168,22 @@ border:none;
 border-radius:20px;
 }
 
-/* FOOTER */
+/* footer */
 
 footer{
 background:#111;
 color:white;
 padding:40px;
 margin-top:40px;
+animation:fade 3s infinite alternate;
 }
 
-/* WHATSAPP BUTTON */
+@keyframes fade{
+from{opacity:0.7}
+to{opacity:1}
+}
+
+/* whatsapp button */
 
 .whatsapp{
 position:fixed;
@@ -168,7 +204,7 @@ border-radius:50%;
 
 <div id="particles-js"></div>
 
-<!-- NAVBAR -->
+<!-- navbar -->
 
 <div class="navbar">
 
@@ -182,9 +218,15 @@ border-radius:50%;
 
 </div>
 
-<!-- HERO -->
+<!-- hero slider -->
 
 <div class="hero">
+
+<div class="slide"></div>
+<div class="slide"></div>
+<div class="slide"></div>
+
+<div class="hero-content">
 
 <h1>Ali Baloch Online Business</h1>
 
@@ -196,21 +238,39 @@ border-radius:50%;
 
 </div>
 
-<!-- SERVICES -->
+</div>
+
+<!-- services -->
 
 <div class="box" id="services">
 
 <h2>Our Services</h2>
 
-<p>✔ Web Design</p>
+<div class="services">
 
-<p>✔ Online Marketing</p>
+<div class="service-card">
+<i class="fa-solid fa-laptop-code"></i>
+<h3>Web Design</h3>
+<p>Modern responsive websites.</p>
+</div>
 
-<p>✔ Business Support</p>
+<div class="service-card">
+<i class="fa-solid fa-chart-line"></i>
+<h3>Online Marketing</h3>
+<p>Grow business with marketing.</p>
+</div>
+
+<div class="service-card">
+<i class="fa-solid fa-briefcase"></i>
+<h3>Business Support</h3>
+<p>Professional support service.</p>
+</div>
 
 </div>
 
-<!-- BLOG -->
+</div>
+
+<!-- blog -->
 
 <div class="box" id="blog">
 
@@ -220,24 +280,24 @@ border-radius:50%;
 
 <div class="blog-card">
 <h3>How to Grow Online Business</h3>
-<p>Learn simple strategies to grow your business online.</p>
+<p>Learn strategies for growth.</p>
 </div>
 
 <div class="blog-card">
-<h3>Best Website Tips</h3>
-<p>Important tips for creating professional websites.</p>
+<h3>Website Tips</h3>
+<p>Create professional websites.</p>
 </div>
 
 <div class="blog-card">
-<h3>Digital Marketing Guide</h3>
-<p>Beginner guide for marketing your business.</p>
+<h3>Marketing Guide</h3>
+<p>Beginner marketing tips.</p>
 </div>
 
 </div>
 
 </div>
 
-<!-- CONTACT -->
+<!-- contact -->
 
 <div class="box" id="contact">
 
@@ -251,8 +311,6 @@ border-radius:50%;
 
 <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br><br>
 
-<input type="hidden" name="_next" value="thankyou.html">
-
 <button type="submit" class="form-btn">Send Message</button>
 
 </form>
@@ -261,30 +319,46 @@ border-radius:50%;
 
 <footer>
 
-<p>© 2026 Ali Baloch Online Business</p>
+<h3>Ali Baloch Online Business</h3>
+
+<p>Helping businesses grow online</p>
+
+<p>© 2026 Ali Baloch</p>
 
 </footer>
 
-<!-- WHATSAPP FLOAT -->
+<!-- whatsapp -->
 
 <a href="https://wa.me/923113302893" class="whatsapp">
-
 <i class="fab fa-whatsapp"></i>
-
 </a>
 
-<!-- AI CHATBOT -->
-
 <script>
+
+/* visitor counter */
+
+if(localStorage.visits){
+localStorage.visits = Number(localStorage.visits)+1;
+}else{
+localStorage.visits = 1;
+}
+
+document.getElementById("visits").innerText = localStorage.visits;
+
+/* particles */
+
+particlesJS("particles-js",{
+particles:{number:{value:60},size:{value:3},move:{speed:2}}
+});
+
+/* chatbot */
 
 function chatbot(){
 
 let msg=prompt("Hello 👋 How can I help you?");
 
 if(msg){
-
-alert("Thanks for your message! We will contact you soon.");
-
+alert("Thanks! We will contact you soon.");
 }
 
 }
@@ -293,36 +367,5 @@ setTimeout(chatbot,8000);
 
 </script>
 
-<!-- VISITOR COUNTER -->
-
-<script>
-
-if(localStorage.visits){
-
-localStorage.visits = Number(localStorage.visits)+1;
-
-}else{
-
-localStorage.visits = 1;
-
-}
-
-document.getElementById("visits").innerText = localStorage.visits;
-
-</script>
-
-<!-- PARTICLES -->
-
-<script>
-
-particlesJS("particles-js",{
-
-particles:{number:{value:60},size:{value:3},move:{speed:2}}
-
-});
-
-</script>
-
 </body>
-
 </html>
